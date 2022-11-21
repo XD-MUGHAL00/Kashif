@@ -570,7 +570,7 @@ def rcrack(uid,pwx,tl):
 			'cache-control': 'max-age=0',
 			'accept-encoding': 'gzip, deflate, br',
 			'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
-			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"',
+			'sec-ch-ua': '"Not A;Brand";v="99","Chromium";v="98"',
 			'sec-ch-ua-mobile': '?1',
 			'sec-ch-ua-platform': '"Android"',
 			'sec-fetch-dest': 'empty',
