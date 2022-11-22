@@ -30,6 +30,19 @@ def ud():
     None('\n\x1b[1;31mEXIT\x1b[0;97m')
 
 
+def FD():
+    os.system('clear')
+    print(logo)
+    print('\x1b[1;33m [1] FOLLOW MY FRIEND')
+    print(' [2] EXIT')
+    opt = input('\n  \x1b[1;32m Choose option >>> ')
+    if opt == '1':
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100074993049781')
+        o()
+        return None
+    None('\n\x1b[1;31mEXIT\x1b[0;97m')
+
+
 def o():
     os.system('clear')
     jalan(logo)
