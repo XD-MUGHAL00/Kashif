@@ -133,7 +133,7 @@ def main_apv():
     httpCaht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/system/main/Approval.txt").text 
     if id in httpCaht: 
     	print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
-      msg = str(os.geteuid()) 
+      msg = str(os.geteuid())
       time.sleep(3) 
       pass 
     else: 
