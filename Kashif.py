@@ -125,33 +125,6 @@ logo ="""
 
 
 
-def main_apv():
-  uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "|".join(uuid)
-  print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
-  try: 
-    httpCaht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/key/main/Key.txt").text 
-    if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
-      msg = str(os.geteuid()) 
-      time.sleep(3) 
-      pass 
-    else: 
-      print("\033[0;96m YOUR key IS NOT ACTIVE\n THIS TOOL IS PAID\n IF YOU BUY MY TOOL\n SO YOUR KEY COPY AND SEND ME MESSAGE ON WHATSAPP  ") 
-      os.system('xdg-open https://wa.me/+923239021979?text=Hello%2C%20MUGHAL%20I%20want%20to%20buy%20your%20command%20Random%20clone')
-      time.sleep(3) 
-      sys.exit() 
-  except: 
-    sys.exit() 
-    if name == '__main__': 
-     print (logo)
-     sex() 
-
-
-
-
-
-
 def cek_apk(session,coki):
     w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
