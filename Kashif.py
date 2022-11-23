@@ -130,7 +130,7 @@ def main_apv():
   id = "|".join(uuid)
   print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
   try: 
-    Http Caht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/system/main/Approval.txt").text 
+    httpCaht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/system/main/Approval.txt").text 
     if id in Http Caht: 
       print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
       msg = str(os.geteuid()) 
