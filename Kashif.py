@@ -114,20 +114,18 @@ logo ="""
  | |  | | |__| | |__| | |  | |/ ____ \| |____ 
  |_|  |_|\____/ \_____|_|  |_/_/    \_\______|\033[1;97m
 ╭──────────•◈•───────────────────╮
-[-] AUTHOR    HAMMAD MUGHAL 
-[-] GITHUB    XD-MUGHAL00
-[-] VERSION    2
-[-] STATUS    PAID 
+      [-] AUTHOR    HAMMAD MUGHAL 
+      [-] GITHUB    XD-MUGHAL00
+      [-] VERSION  2
+      [-] STATUS    PAID 
 ╰──────────•◈•───────────────────╯  
-\033[93;1mWELLCOME TO MUGHAL TOOL ❤️
+\033[1;97mWELLCOME TO MUGHAL TOOL ❤️
 '\33[1;97mTURN on & off (ARPLANE MODE) before use   
 \033[1;97m==============================================================="""
 
 
 
-os.system("clear")
-print(logo)
-def main():
+def main_apv():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
   id = "|".join(uuid)
   print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
@@ -284,4 +282,4 @@ def rcrack(uid,pwx,tl):
 	except:
 		pass
 print('chk update')
-main()
+main_apv()
