@@ -132,8 +132,8 @@ def main_apv():
   try: 
     httpCaht = requests.get("https://raw.githubusercontent.com/XD-MUGHAL00/system/main/Approval.txt").text 
     if id in httpCaht: 
-    	print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
-      msg = str(os.geteuid())
+      print("\033[92m  YOUR KEY IS ACTIVE AGAIN RUN THISH TOOLS˜˜........\033[97m")
+      msg = str(os.geteuid()) 
       time.sleep(3) 
       pass 
     else: 
@@ -141,7 +141,7 @@ def main_apv():
       os.system('xdg-open https://wa.me/+923239021979?text=Hello%2C%20MUGHAL%20I%20want%20to%20buy%20your%20command%20Random%20clone')
       time.sleep(3) 
       sys.exit() 
-  except:
+  except: 
     sys.exit() 
     if name == '__main__': 
      print (logo)
