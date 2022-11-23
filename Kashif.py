@@ -125,6 +125,58 @@ logo ="""
 
 
 
+def main_apv():
+    imt = ('~MUGHAL=')
+    os.system('clear')
+    print (logo)
+    try:
+        key1 = open('/sdcard/key.txt', 'r').read()
+    except IOError:
+        os.system('clear')
+        print (logo)
+
+        print ('           CONTACT TO ADMIN THANKS')
+        
+        print ('')
+        myid = uuid.uuid4().hex[:20]
+        print ('         YOUR KEY : ' + myid + imt)
+        kok = open('/sdcard/key.txt', 'w')
+        kok.write(myid + imt)
+        kok.close()
+        print ('')
+        print ('       THIS IS YOUR KEY')
+        print ('       COPY KEY AND SEND WHATSAPP')
+        print ('')
+        print ('')
+        print ('')
+        print ('   Agar Ap Na Subscription Kar Le Ha To')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100074993049781')
+        time.sleep(3)
+
+    r1 = requests.get('https://raw.githubusercontent.com/XD-MUGHAL00/key/main/Key.txt').text
+    if key1 in r1:
+        Main()
+    else:
+        os.system('clear')
+        print (logo)
+        
+        print ('       Admin Sa Rabta Kran Thanks')
+     
+        print ('')
+        print ('     YOUR KEY : ' + key1)
+        print ('')
+        print ('       Ya Uper Wale Ap Ke KEY Ha')
+        print ('       Copy Kar Ka Bhaj Dena')
+        print ('')
+        print ('')
+        print ('')
+        print ('   Agar Ap Na Subscription Kar Le Ha To')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100074993049781')
+        time.sleep(3)
+
+
+
+
 def cek_apk(session,coki):
     w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
